@@ -9,7 +9,6 @@ import 'antd/dist/reset.css';
 import { AddBike } from './pages/AddBike';
 import AdminHome from './pages/AdminHome';
 import  EditBike  from './pages/EditBike';
-import Epay from './pages/Epay';
 
 
 function App() {
@@ -57,14 +56,6 @@ function App() {
             element={
               <ProtectedRoute>
                 <EditBike/>
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/payment"
-            element={
-              <ProtectedRoute>
-                <Epay/>
               </ProtectedRoute>
             }
           />
